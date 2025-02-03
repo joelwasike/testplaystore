@@ -52,7 +52,7 @@ func main() {
 	r.POST("/notices", CreateNotice)
 	r.GET("/notices", GetNotices)
 
-	if err := r.Run(":8080"); err != nil {
+	if err := r.Run(":8081"); err != nil {
 		log.Fatal("Failed to start server:", err)
 	}
 }
