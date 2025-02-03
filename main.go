@@ -25,7 +25,7 @@ var db *gorm.DB
 
 func InitializeDatabase() {
 	var err error
-	dsn := "joelwasike:@Webuye2021@tcp(127.0.0.1:3306)/notices?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "newuser:@password@tcp(127.0.0.1:3306)/testapp?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		log.Fatal("Failed to connect to the database:", err)
